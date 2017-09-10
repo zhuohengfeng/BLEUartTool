@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:textColor="@color/text_color"
+        android:background="#90c4f1"
+        android:id="@+id/tv_device_name"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <ListView
+        android:id="@+id/list_logs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"/>
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/field"
+        android:background="#f5deab"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:enabled="false"
+        android:hint="@string/uart_action_send_hint"
+        android:imeOptions="actionSend"
+        android:inputType="textMultiLine"/>
+
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#92e7a8"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/action_send"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/uart_action_send"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/action_scanner"
+            android:onClick="onScannerClicked"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="搜索"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

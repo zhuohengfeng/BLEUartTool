@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alert_dialog_padding_bottom">10dp</dimen>
+    <dimen name="alert_dialog_padding">10dp</dimen>
+    <dimen name="alert_dialog_padding_top">10dp</dimen>
+
+    <dimen name="uart_feature_title_long_margin">-24dp</dimen>
+</resources>
